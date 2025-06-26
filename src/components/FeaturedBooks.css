@@ -1,0 +1,32 @@
+/* FeaturedBooks.css */
+.featured-books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.featured-book {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: calc(33.33% - 20px);
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.featured-book img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.featured-book h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.featured-book p {
+  font-size: 0.9rem;
+  color: #666;
+}

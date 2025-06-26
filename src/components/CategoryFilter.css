@@ -1,0 +1,14 @@
+/* CategoryFilter.css */
+.category-filter {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-filter select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
