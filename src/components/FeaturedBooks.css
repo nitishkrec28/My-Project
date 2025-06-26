@@ -1,32 +1,59 @@
-/* FeaturedBooks.css */
+/* General Styling */
 .featured-books {
+  text-align: center;
+  margin: 30px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Books Container */
+.books-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
 }
 
-.featured-book {
-  border: 1px solid #ddd;
+.book-card {
+  background: #f9f9f9;
+  color: #333;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
   padding: 15px;
-  width: calc(33.33% - 20px);
-  background-color: #f9f9f9;
-  text-align: center;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.featured-book img {
-  max-width: 100%;
-  border-radius: 4px;
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.featured-book h3 {
-  font-size: 1.2rem;
-  margin: 10px 0;
+.book-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
 }
 
-.featured-book p {
-  font-size: 0.9rem;
+.book-card p {
+  margin: 0 0 10px;
   color: #666;
+}
+
+.book-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book-card a:hover {
+  text-decoration: underline;
 }
